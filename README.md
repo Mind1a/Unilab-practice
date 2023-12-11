@@ -1,8 +1,21 @@
-# React + Vite
+Branch Structure
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+main branch: development test branch: pre-development
 
-Currently, two official plugins are available:
+development - stable branch pre-development - working branch
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+pull request
+
+All the pull requests create from pre-development and send pull requests on the same branch.
+
+When creating new branch, always use the structure of the branch anatomy.
+
+branch anatomy: type/title
+
+type: core | feature | bugfix
+
+pre-development branch is synced to the development branch once a week.
+
+Install with npm: npm install
+
+Use npm run dev to run the app.
