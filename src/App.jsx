@@ -5,8 +5,10 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+  const x = 0;
+  const y = 0;
+  console.log(count, x + y);
   const [arr, setArr] = useState([1, 2, 3, 4, 5]);
-
   console.log(arr);
 
   return (
