@@ -152,6 +152,6 @@ export const GlobalStyle = styled.createGlobalStyle`
   }
 
   body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 `;
