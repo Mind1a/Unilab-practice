@@ -1,3 +1,9 @@
+import { Header } from "../../components/header";
+
 export const Process = () => {
-  return <div>Process</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
