@@ -3,6 +3,54 @@ import { createGlobalStyle } from "styled-components";
 const styled = { createGlobalStyle };
 
 export const GlobalStyle = styled.createGlobalStyle`
+  /********************************************
+   VARIABLES 
+  ********************************************/
+
+  :root {
+    /* Colors */
+    --clr-primary: #5243c2;
+    --clr-danger: #ff4d4f;
+    --clr-black: #1f2939;
+    --clr-muted: #949ba6;
+    --clr-titan-white: #f5f5ff;
+    --clr-black-squeeze: #f0f7fa;
+    --clr-white: #ffffff;
+
+    --clr-red-500: #ff4d4f;
+    --clr-red-400: #ff9293;
+    --clr-red-300: #ffc8c8;
+    --clr-red-200: #ffeded;
+
+    --clr-indigo-600: #473aa6;
+    --clr-indigo-500: #5243c2;
+
+    --clr-gray-200: #d4d4d4;
+    --clr-gray-100: #f4f4f4;
+
+    /* Font sizes */
+    --fs-h1: 4.5rem; // 72px
+    --fs-h2: 3rem; // 48px
+    --fs-h3: 2.25rem; // 36px
+    --fs-h4: 1.5rem; // 24px
+    --fs-h5: 1.25rem; // 20px
+    --fs-h6: 1rem; // 16px
+
+    --fs-base: 1rem; // 16px
+    --fs-s: 0.875rem; // 14px
+    --fs-xs: 0.75rem; // 12px
+
+    /* Font weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+  }
+
+  /********************************************
+   Css reset
+  ********************************************/
   *:where(
       :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
     ) {
@@ -104,6 +152,6 @@ export const GlobalStyle = styled.createGlobalStyle`
   }
 
   body {
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 `;
