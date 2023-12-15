@@ -13,4 +13,9 @@ export const StyledLogo = styled(Link)`
   place-items: center;
   line-height: 0;
   transition: background-color 0.2s ease-in-out;
+
+  &:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
 `;
