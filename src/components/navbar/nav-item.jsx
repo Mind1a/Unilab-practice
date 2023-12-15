@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { StyledNavItem } from "./nav-item.styled";
 
 export const NavItem = ({ href, title }) => {
@@ -10,9 +9,4 @@ export const NavItem = ({ href, title }) => {
       {title}
     </StyledNavItem>
   );
-};
-
-NavItem.propTypes = {
-  href: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
 };

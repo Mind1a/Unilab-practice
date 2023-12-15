@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { StyledButton } from "./button.styled";
 
 export const Button = ({
@@ -22,14 +21,4 @@ export const Button = ({
       {content}
     </StyledButton>
   );
-};
-
-Button.propTypes = {
-  type: PropTypes.string.isRequired,
-  content: PropTypes.node.isRequired,
-  onClick: PropTypes.func.isRequired,
-  color: PropTypes.string,
-  backgroundColor: PropTypes.string,
-  fontSize: PropTypes.string,
-  FontWeight: PropTypes.string,
 };
