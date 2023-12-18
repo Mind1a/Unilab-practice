@@ -33,9 +33,10 @@ export const SImageContainer = styled.div`
     border-radius: 50%;
     padding: 3.75rem 2.5rem;
     transform: translate(50%,100%);
+    transition: ease-in 0.25s;
+    
     &:hover{
       transform: translate(50%,100%) scale(1.2);
-      transition: ease-in 0.25s;
     }
     
     &:focus-visible {
