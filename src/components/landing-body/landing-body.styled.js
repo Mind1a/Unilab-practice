@@ -15,7 +15,7 @@ export const StyledLandingBody = styled.main`
       justify-content: end;
 
       img {
-        width: 70%;
+        width: 75%;
       }
       
       a {
@@ -35,6 +35,7 @@ export const StyledLandingBody = styled.main`
 
         &:hover{
           transform: translate(50%,100%) scale(1.2);
+          transition: ease-in 0.25s;
         }
         
         &:focus-visible {
