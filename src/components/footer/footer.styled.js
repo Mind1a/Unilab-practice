@@ -9,11 +9,12 @@ export const StyledFooter = styled.footer`
   padding: 2rem;
   font-size: var(--fs-xs);
   font-weight: var(--fw-regular);
+`
 
-  .policies{
-    display: flex;
-    align-items: center;
-    color: var(--clr-muted);
+export const SPolicies = styled.div`
+  display: flex;
+  align-items: center;
+  color: var(--clr-muted);
 
     p {
       margin-right: 8px;
@@ -26,19 +27,18 @@ export const StyledFooter = styled.footer`
     a {
       color: var(--clr-primary);
     }
-  }
+`
 
-  .payment-methods{
+export const SPaymentMethods = styled.ul`
+  display: flex;
+
+  li {
     display: flex;
-
-    li {
-      display: flex;
-      align-items: center;
-      margin-right: 8px;
-    }
+    align-items: center;
+    margin-right: 8px;
   }
 
-  .payment-methods li:last-child{
-    margin: 0;
-  }
+  li:last-child{
+  margin: 0;
+}
 `

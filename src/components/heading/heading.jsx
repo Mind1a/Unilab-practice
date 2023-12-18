@@ -1,4 +1,4 @@
-import { StyledHeading } from "./heading.styled"
+import { SHeading } from "./heading.styled"
 
 export const Heading = ({
   content,
@@ -9,7 +9,7 @@ export const Heading = ({
   lineHeight,
 }) => {
   return (
-    <StyledHeading
+    <SHeading
       fontSize={fontSize}
       fontWeight={fontWeight}
       color={color}
@@ -17,6 +17,6 @@ export const Heading = ({
       lineHeight={lineHeight}
     >
       {content}
-    </StyledHeading>
+    </SHeading>
   )
 }
