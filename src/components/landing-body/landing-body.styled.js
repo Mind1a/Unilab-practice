@@ -12,13 +12,13 @@ export const SLandingBody = styled.main`
 
 export const SImageContainer = styled.div`
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: end;
 
   img {
     width: 75%;
   }
-      
+
   a {
     color: var(--clr-white);
     line-height: 30px;
@@ -32,16 +32,16 @@ export const SImageContainer = styled.div`
     display: flex;
     border-radius: 50%;
     padding: 3.75rem 2.5rem;
-    transform: translate(50%,100%);
+    transform: translate(50%, 100%);
     transition: ease-in 0.25s;
-    
-    &:hover{
-      transform: translate(50%,100%) scale(1.2);
+
+    &:hover {
+      transform: translate(50%, 100%) scale(1.2);
     }
-    
+
     &:focus-visible {
       outline: 2px solid var(--clr-primary);
       outline-offset: 2px;
     }
   }
-`
+`;
