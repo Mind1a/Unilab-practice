@@ -25,9 +25,7 @@
   position: absolute;
   z-index: 998;
 }
-/*
-Different arrow positioning
-*/
+
 .popup.arrow-top:before {
   left: calc(50% - 10px);
   top: -8px;

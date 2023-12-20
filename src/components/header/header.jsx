@@ -1,3 +1,4 @@
+import { BurgerMenu } from "../burger-menu";
 import { Contact } from "../contact";
 import { Logo } from "../logo";
 import { Navbar } from "../navbar";
@@ -9,6 +10,7 @@ export const Header = () => {
       <Logo />
       <Navbar />
       <Contact />
+      <BurgerMenu />
     </StyledHeader>
   );
 };
