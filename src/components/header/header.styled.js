@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "../../breakpoints";
 
 export const StyledHeader = styled.header`
   position: relative;
@@ -8,4 +9,15 @@ export const StyledHeader = styled.header`
   padding: 2rem;
   width: min(100%, 1600px);
   margin-inline: auto;
+
+  ${device.xs`
+    display: flex;
+    justify-content: space-between;
+  `}
+
+  ${device.sm`
+    display: flex;
+      justify-content: space-between;
+
+  `}
 `;
