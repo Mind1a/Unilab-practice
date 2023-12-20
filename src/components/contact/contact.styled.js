@@ -19,6 +19,7 @@ export const StyledContact = styled.div`
     border-radius: 100vmax;
     display: grid;
     place-items: center;
+    cursor: pointer;
 
     &:focus-visible {
       outline: 2px solid var(--clr-primary);
