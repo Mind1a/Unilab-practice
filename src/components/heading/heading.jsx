@@ -1,7 +1,7 @@
-import { SHeading } from "./heading.styled"
+import { SHeading } from "./heading.styled";
 
 export const Heading = ({
-  content,
+  children,
   fontSize,
   fontWeight,
   color,
@@ -16,7 +16,7 @@ export const Heading = ({
       maxWidth={maxWidth}
       lineHeight={lineHeight}
     >
-      {content}
+      {children}
     </SHeading>
-  )
-}
+  );
+};
