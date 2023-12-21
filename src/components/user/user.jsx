@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Modal } from "../modal";
 import { UserPopUp } from "./user-pop-up";
 
 import { SUser, SUserButton } from "./user.styled";
+import userImage from "../../assets/user.png";
 
 export const User = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,7 +19,7 @@ export const User = () => {
         aria-expanded={isModalOpen}
         onClick={() => setIsModalOpen(true)}
       >
-        <img src="/src/assets/user.png" alt="" />
+        <img src={userImage} alt="User picture" />
       </SUserButton>
 
       <AnimatePresence>
