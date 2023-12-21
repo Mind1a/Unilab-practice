@@ -12,7 +12,7 @@ export const StyledContact = styled.div`
   `}
 
   ${device.sm`
-       margin: unset
+    margin: unset
 
   `}
   .phone {
@@ -28,34 +28,8 @@ export const StyledContact = styled.div`
 
     ${device.sm`
     display: none;
-        justify-self:center;
+    justify-self:center;
 
-  `}
-  }
-
-  .user {
-    background-color: var(--clr-titan-white);
-    padding: 1em;
-    border-radius: 100vmax;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-
-    &:focus-visible {
-      outline: 2px solid var(--clr-primary);
-      outline-offset: 2px;
-    }
-
-    ${device.xs`
-    display: none;
-  `}
-
-    ${device.md`
-    display: none;
-  `}
-
-    ${device.sm`
-    display: none;
   `}
   }
 `;
