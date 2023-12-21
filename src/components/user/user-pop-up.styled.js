@@ -7,6 +7,12 @@ export const SUserPopup = styled.div`
   border-radius: 1rem;
   box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.4);
 
+  svg {
+    position: absolute;
+    top: -0.5rem;
+    right: 1.2rem;
+  }
+
   h2 {
     color: var(--clr-black);
     font-size: var(--fs-base);

@@ -3,6 +3,7 @@ import { forwardRef } from "react";
 import { SUserPopup } from "./user-pop-up.styled";
 import { useTrackPosition } from "../../hooks/use-track-position";
 import { NavLink } from "react-router-dom";
+import { TriangleIcon } from "../../assets/triangle-icon";
 
 const MotionPopup = motion(SUserPopup);
 
@@ -31,10 +32,12 @@ export const UserPopUp = forwardRef(function UserPopup({ onClose }, ref) {
         height: 0,
       }}
       transition={{
-        duration: 0.1,
+        duration: 0.2,
       }}
       style={styles}
     >
+      <TriangleIcon />
+
       <h2>Jerome Porter</h2>
       <ul className="links">
         <Link href="#" title="Profile" onClick={onClose} />
