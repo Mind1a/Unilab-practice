@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { forwardRef } from "react";
+import { forwardRef, useRef } from "react";
 import { SUserPopup } from "./user-pop-up.styled";
 import { useTrackPosition } from "../../hooks/use-track-position";
 import { NavLink } from "react-router-dom";
@@ -13,15 +13,17 @@ export const UserPopUp = forwardRef(function UserPopup({ onClose }, ref) {
     trackScroll: true,
   });
 
+  const popupRef = useRef(null);
+
   const styles = {
     position: "fixed",
     top: boundaries?.top + boundaries?.height + 20,
-    left: boundaries?.left + boundaries?.width,
-    transform: "translateX(-100%)",
+    left: boundaries?.left + boundaries?.width - popupRef?.current?.clientWidth,
   };
 
   return (
     <MotionPopup
+      ref={popupRef}
       initial={{
         height: 0,
       }}
