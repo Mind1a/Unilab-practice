@@ -5,18 +5,18 @@ export const Button = ({
   content,
   onClick,
   color,
-  backgroundColor,
+  background,
   fontSize,
-  FontWeight,
+  fontWeight,
 }) => {
   return (
     <StyledButton
       type={type}
       onClick={onClick}
       color={color}
-      backgroundColor={backgroundColor}
+      background={background}
       fontSize={fontSize}
-      FontWeight={FontWeight}
+      fontWeight={fontWeight}
     >
       {content}
     </StyledButton>

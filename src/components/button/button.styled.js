@@ -3,8 +3,8 @@ import { styled } from "styled-components";
 export const StyledButton = styled.button`
   font-size: ${({ fontSize }) => fontSize || "var(--fs-base)"};
   font-weight: ${({ fontWeight }) => fontWeight || "var(--fw-semibold)"};
-  background-color: ${({ backgroundColor }) =>
-    backgroundColor || "var(--clr-titan-white)"};
+  background-color: ${({ background }) =>
+    background || "var(--clr-titan-white)"};
   color: ${({ color }) => color || "var(--clr-titan-white)"};
   padding: 0.6em;
   border-radius: 100vmax;
