@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { useCallback, useEffect, useLayoutEffect, useRef } from "react";
+import { useCallback, useLayoutEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 import { SModal } from "./modal.styled";
 
 const MotionModal = motion(SModal);
 
-export const Modal = ({ children, onClose, background }) => {
+export const Modal = ({ children, onClose }) => {
   const modalRef = useRef(null);
   const previouslyFocusedElement = useRef(null);
   const focusableElementsSelector =
