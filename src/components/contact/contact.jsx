@@ -1,17 +1,10 @@
-import { useState } from "react";
-import { PopUp } from "../pop-up";
 import { Button } from "../button";
 import { StyledContact } from "./contact.styled";
 
 import { PhoneIcon } from "../../assets/phone-icon";
+import { User } from "../user";
 
 export const Contact = () => {
-  const [toggle, setToggle] = useState(false);
-
-  const toggleUserProfile = () => {
-    setToggle(!toggle);
-  };
-
   return (
     <>
       <StyledContact>
@@ -27,15 +20,12 @@ export const Contact = () => {
           FontWeight={"regular"}
           fontSize={"base"}
           color={"var(--clr-red-500)"}
-          backgroundColor={"var(--clr-red-200)"}
+          background={"var(--clr-red-200)"}
         />
         <span className="phone">8 800 437-87-22</span>
 
-        <button className="user" onClick={toggleUserProfile}>
-          <img src="/src/assets/user.png" alt="" />
-        </button>
+        <User />
       </StyledContact>
-      {toggle && <PopUp />}
     </>
   );
 };
